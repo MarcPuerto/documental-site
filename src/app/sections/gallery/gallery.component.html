@@ -1,11 +1,9 @@
-<section class="relative w-full bg-stone-100 py-16 px-8 overflow-hidden">
-  <!-- Text Overlays -->
+<!--<section class="relative w-full bg-stone-100 py-16 px-8 overflow-hidden">
   <div class="absolute top-6 mb-2 left-6 text-stone-600 text-lg">
   &#64;Ecoturismo &#64;JusticiaAmbiental &#64;ArrecifesDeCoral &#64;SaveThePlanet
   </div>
 
 
-  <!-- Carousel Container -->
   <div class="relative w-full flex items-center justify-center">
     <div class="w-full overflow-hidden rounded-xl">
       <div class="flex transition-transform duration-700 ease-in-out" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
@@ -15,7 +13,6 @@
       </div>
     </div>
 
-    <!-- Navigation -->
     <button (click)="prev()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded">
       <
     </button>
@@ -23,12 +20,110 @@
       >
     </button>
   </div>
-</section>
+</section>-->
 
-<section class="relative w-full bg-blue-900 py-16 px-8 overflow-hidden">
+<section id="acts" class="relative w-full bg-blue-900 py-16 px-8 overflow-hidden">
 
-   <img src="assets/SCRUBSCRUB.gif" 
+  <!-- Background GIF -->
+  <img src="assets/SCRUBSCRUB.gif" 
        class="absolute top-0 left-0 w-full h-full object-cover z-0" 
        alt="Background GIF" />
 
+  <!-- Timeline Container -->
+  <div class="relative z-10 max-w-6xl mx-auto flex flex-col items-center">
+    
+    <!-- Vertical line -->
+    <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-white/30"></div>
+
+    <!-- Act 1 -->
+    <div class="relative w-full flex flex-col md:flex-row items-center mb-16">
+      <div class="md:w-1/2 md:pr-8 text-right md:text-right">
+        <h3 class="text-2xl font-bold text-white mb-2">Act I</h3>
+       <p class="text-white/90 mb-2">
+Bright orange birds chirp at each other as part of their morning routine while Germán Méndez
+fries a couple of fresh eggs in his kitchen, styled with large Mexican tiles. He lives isolated in
+the jungle of Cozumel, Yucatán—the only island in Mexico with a jungle. Not a single sound of
+civilization, and Germán couldn’t be happier. </p>
+        <p class="text-white/90 mb-2">
+
+His grueling work consists of endless efforts to revive the long-forgotten reefs. His face is
+marked with deep grief—he’s seen firsthand the demise of the corals over the last 30 years.
+We follow him through his restoration site as the tragic story of Cozumel’s ecological disaster
+unfolds. </p>
+        <p class="text-white/90 mb-2">
+
+Across the Gulf of Mexico, a family with two children slam their doors and trip over oversized
+suitcases as they rush to a taxi waiting by the curb. A long-awaited holiday for the parents
+and an ecstatic adventure for the children. Soon, they’ll board a cruise ship—larger than the
+buildings lining the Miami skyline.        </p>
+      </div>
+      <div class="md:w-1/2 flex justify-center md:justify-start">
+        <img src="assets/act1.jpg" alt="Acto 1" class="ml-8 w-94 h-94 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" />
+      </div>
+    </div>
+
+    <!-- Act 2 -->
+    <div class="relative w-full flex flex-col md:flex-row-reverse items-center mb-16">
+      <div class="md:w-1/2 md:pl-8 text-left">
+        <h3 class="text-2xl font-bold text-white mb-2">Act II</h3>
+        <p class="text-white/90 mb-2">
+In a bitter twist, Germán’s work is partly funded by the very industry he resents. As part of his job, he
+leads diving tours for tourists—often arriving by cruise ships—who unknowingly contribute to the
+reefs’ destruction. He shows them the damage firsthand, sometimes blaming them outright, unable to
+contain his frustration. </p>
+        <p class="text-white/90 mb-2">
+
+But it becomes clear Germán has a purpose behind his actions. He wants to leave a mark on this earth
+before he perishes. </p>
+        <p class="text-white/90 mb-2">
+
+Soon, the family’s ship docks at one of many piers on Cozumel. They step onto the island, so foreign to
+them. Meanwhile, Germán gears up to lead another tour. In a short time, the family and Germán will
+meet—to face the uncomfortable reality of their vacation. </p>
+        <p class="text-white/90 mb-2">
+
+Germán takes them on a tour of the island. With a mixture of fury and almost pleasure, he shows
+them the destruction brought by tourism. The family watches—stunned—as their fantasy melts into
+the barren ashes of the trees below them.        </p>
+      </div>
+      <div class="md:w-1/2 flex justify-center md:justify-end">
+        <img src="assets/act2.jpg" alt="Acto 2" class="mr-8 w-94 h-94 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" />
+      </div>
+    </div>
+
+    <!-- Act 3 -->
+    <div class="relative w-full flex flex-col md:flex-row items-center mb-16">
+      <div class="md:w-1/2 md:pr-8 text-right md:text-right">
+        <h3 class="text-2xl font-bold text-white mb-2">Act III</h3>
+        <p class="text-white/90 mb-2">
+The family, there to enjoy an escape on a tropical island, watches in dismay as they realize they’ve stepped
+into a wildlife cemetery. The question stands: with such limited options, are they really the problem? Their
+ignorance, their plea for a simple vacation, their fantasy of a foreign land.</p>
+        <p class="text-white/90 mb-2">
+
+Yet in weary steps, Germán’s attitude begins to shift. Beneath his critical remarks about the tourists, we
+glimpse a kind soul. Ultimately, it’s clear he wishes for the health of the land for all of us—it’s one man’s battle
+against a system so large, perhaps no single individual can stop it anymore. </p>
+        <p class="text-white/90 mb-2">
+
+The family and Germán share still moments. They laugh and reflect. Soon, the family departs. The return trip
+on the cruise feels familiar, but now through a different lens. They step back onto the soil of home, preparing
+for another day of work—their escape now over. </p>
+        <p class="text-white/90 mb-2">
+
+Germán wakes up to another day in the jungle. The birds chirp at the sight of their neighbor. The dogs chase
+chickens through the yard. He puts on his helmet, and we follow hitm along his daily route on his scooter. He
+nods at fellow islanders working food stalls, serving tourists. </p>
+        <p class="text-white/90 mb-2">
+
+Though he knows there is no easy escape from a system locked into society, he perseveres. For he does not
+aim to stop—until he sees his own children beneath the water saved.        </p>
+      </div>
+      <div class="md:w-1/2 flex justify-center md:justify-start">
+        <img src="assets/act2.png" alt="Acto 3" class="ml-8 w-94 h-94 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" />
+      </div>
+    </div>
+
+  </div>
 </section>
+
