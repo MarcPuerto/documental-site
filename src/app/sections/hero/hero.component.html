@@ -18,9 +18,18 @@
     <span class="block font-serif">SWALLOWS</span>
   </h1>
 
-  <p class="cursor typewriter-animation text-white text-l font-serif">
-    "Even after I am gone, the corals will still be here..."
+ <div
+  class="absolute bottom-10 right-10 flex flex-col items-end space-y-2 z-30"
+>
+  <p
+    *ngFor="let quote of visibleQuotes; let i = index"
+    [style.opacity]="getOpacity(i)"
+    class="typewriter text-white font-serif text-lg md:text-xl transition-opacity duration-2000"
+  >
+    {{ quote }}
   </p>
+</div>
+
 </section>
 
 
@@ -44,12 +53,33 @@
 </ul>
 
 
-  <!-- Social icons
+  <!-- Social icons -->
   <div class="flex space-x-4 mt-4">
-    <img src="https://cdn.imgbin.com/18/2/16/imgbin-instagram-logo-social-media-instagram-ijxqrnGpcFLAMeHhhq62d65Af.jpg" target="_blank" class="text-blue-400 hover:text-blue-600 transition"/>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" target="_blank" class="text-pink-300 hover:text-pink-500 transition"/>
-  </div>
- -->
+      <!-- Instagram -->
+  <a href="https://www.instagram.com/islandofswallows" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="transition transform hover:scale-110">
+    <img 
+      src="assets/insta.png" 
+      alt="Instagram" 
+      class="w-4 h-4 opacity-80 hover:opacity-100"
+    />
+  </a>
+
+  <!-- X (Twitter) -->
+  <a href="https://x.com/islandofswallows" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="transition transform hover:scale-110">
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" 
+      alt="X logo" 
+      class="w-4 h-4 opacity-80 hover:opacity-100"
+    />
+  </a>
+</div>
+ 
   <!-- Decorative line -->
   <div class="mt-6">
     <span class="block w-12 h-0.5 bg-black transform rotate-0 animate-pulse"></span>

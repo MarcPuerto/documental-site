@@ -4,18 +4,61 @@
   background-position: center;
 }
 
+/* tu CSS existente... */
+.typewriter {
+  position: relative;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.typewriter {
+  animation:
+    typing 3s steps(50) 0s 1 normal both,
+    blink 500ms steps(50) infinite normal;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from { border-right-color: rgba(255, 255, 255, 0.75); }
+  to { border-right-color: transparent; }
+}
+
+
 .cursor{
-    position: relative;
+    /* mantenemos la anchura para que la animación typewriter funcione */
     width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 30px;
-    text-align: center;
+    border-right: 16px solid rgba(255,255,255,.75);
+    font-size: 10px;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
+    /* quitamos el centrado vertical/transform original si lo tenías */
+    margin: 0;            /* importante: evita centrado por margin */
+    text-align: right;    /* para que el texto quede alineado al borde derecho */
 }
-/* Animation */
+
+/* clase específica para situarlo abajo a la derecha dentro de .hero */
+.cursor.bottom-right {
+    position: absolute;
+    right: 1.5rem;  /* ajuste fino: cambia a right: 2rem si prefieres */
+    bottom: 1.5rem; /* ajuste fino: cambia según el espacio que quieras */
+    transform: none; /* anulamos cualquier translate anterior */
+}
+
+/* Media query para pantallas pequeñas: reducir ancho para que no salga del viewport */
+@media (max-width: 640px) {
+  .cursor {
+    width: 18em; /* o usa max-width: 90% si prefieres */
+    font-size: 20px;
+  }
+}
+
+/* Animaciones (sin cambios) */
 .typewriter-animation {
   animation: 
     typewriter 5s steps(50) 1s 1 normal both, 
@@ -29,6 +72,7 @@
   from { border-right-color: rgba(255,255,255,.75); }
   to { border-right-color: transparent; }
 }
+
 
 
 .masked-text {
