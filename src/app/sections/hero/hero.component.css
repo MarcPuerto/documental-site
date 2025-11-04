@@ -1,7 +1,8 @@
 .hero {
-  background-image: url('../../../assets/banner.gif');
+  background-image: url('../../../assets/main.gif');
   background-size: cover;
   background-position: center;
+  
 }
 
 /* tu CSS existente... */

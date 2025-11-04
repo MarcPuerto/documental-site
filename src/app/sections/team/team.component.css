@@ -1,5 +1,5 @@
 img {
-  mask: url(https://assets.codepen.io/1101822/circles-mask-whole.svg) no-repeat
+  mask: url('../../../assets/mask.png') no-repeat
     center;
 
   max-width: 100%;
