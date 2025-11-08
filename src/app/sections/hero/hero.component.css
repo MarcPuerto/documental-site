@@ -5,6 +5,21 @@
   
 }
 
+.backk {
+  background-image: url('../../../assets/backk.mp4');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+@media (max-width: 640px) {
+  .typewriter {
+    font-size: 14px; /* pequeño para móviles */
+    max-width: 80vw; /* no se salga de la pantalla */
+  }
+}
+
+
 /* tu CSS existente... */
 .typewriter {
   position: relative;

@@ -1,71 +1,79 @@
-<section  id="synopsis" class="relative w-full bg-stone-100 text-black py-16 px-8 md:px-32">
-<p class="mt-2 space-y-2 font-semibold text-stone-800 text-4xl text-center italic">
-    As the government plans to build a 4th cruise ship pier in
-Cozumel, Mexico, a man living in a jungle must <span class="sketch-highlight">save the
-corals </span> before the collapse of its ecosystem</p>
-    <hr class="mt-12 border-t border-gray-300 mb-12" />
+<section id="synopsis" class="relative w-full py-16 px-4 sm:px-8 md:px-32 overflow-hidden">
 
+  <!-- Video background -->
+  <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+    <source src="assets/backk.mp4" type="video/mp4" />
+  </video>
 
- <div class="grid grid-cols-2 gap-8">
-      <!-- Column 1 -->
-      <div class="col-4">
-        <img
-      src="assets/poster.png"
-      alt="Island of Swallows Logo"
-      class="w-full object-contain opacity-90"
-      loading="lazy"
-    />
-      </div>
+  <!-- Navigation -->
+  <nav class="relative z-10  flex flex-col items-center space-y-4">
+    <ul class="hidden sm:flex flex-col sm:flex-row sm:space-x-6 font-semibold text-sm sm:text-base cursor-pointer space-y-2 sm:space-y-0">
+    <li (click)="scrollTo('synopsis')" class="relative after:block after:h-0.5 after:bg-stone-800 after:w-0 after:transition-all after:duration-300 hover:after:w-full">
+      Synopsis
+    </li>
+    <li (click)="scrollTo('cast')" class="relative after:block after:h-0.5 after:bg-stone-800 after:w-0 after:transition-all after:duration-300 hover:after:w-full">
+      Cast
+    </li>
+    <li (click)="scrollTo('acts')" class="relative after:block after:h-0.5 after:bg-stone-800 after:w-0 after:transition-all after:duration-300 hover:after:w-full">
+      Acts
+    </li>
+    <li (click)="scrollTo('team')" class="relative after:block after:h-0.5 after:bg-stone-800 after:w-0 after:transition-all after:duration-300 hover:after:w-full">
+      Team
+    </li>
+  </ul>
 
-      <!-- Column 2 -->
-      <div class="col-8">
-        <div class="flex flex-col">
-            
-                <span class="text-sm  text-gray-400">| synopsis</span>
+    <!-- Social icons -->
+    <div class="flex space-x-4 mt-8 sm:mt-6">
+      <a href="https://www.instagram.com/islandofswallows" target="_blank" rel="noopener noreferrer" class="transition transform hover:scale-110">
+        <img src="assets/insta.png" alt="Instagram" class="w-4 sm:w-5 h-4 sm:h-5 opacity-80 hover:opacity-100" />
+      </a>
+      <a href="https://x.com/islandofswallows" target="_blank" rel="noopener noreferrer" class="transition transform hover:scale-110">
+        <img src="assets/sima.png" alt="X logo" class="w-10 sm:w-12 h-4 opacity-80 hover:opacity-100" />
+      </a>
+    </div>
+  </nav>
 
-        <span class="mt-2 space-y-2 ">
-                  <p class="font-bold text-xl text-stone-800 text-justify">
+  <!-- Intro text -->
+  <p class="mt-10 text-center text-2xl sm:text-3xl md:text-4xl font-semibold italic z-10 relative">
+    As the government plans to build a 4th cruise ship pier in Cozumel, Mexico, a man living in a jungle must
+    <span class="sketch-highlight">save the corals</span> before the collapse of its ecosystem
+  </p>
 
-Set in Cozumel, Mexico, this documentary follows two parallel threads: Germán, a
-solitary diver restoring coral reefs by hand, and an American family on a short holiday
-cruise, navigating the well-worn contours of leisure. One moves slowly, deliberately,
-embedded in the rhythms of the sea; the other is swept along by the temporal economy
-of break-time, itinerary, and return.
-</p>
-                  <p class="font-bold text-xl text-stone-800 text-justify">
+  <hr class="mt-12 border-t border-gray-800 mb-12 relative z-10" />
 
-When their paths converge—during a reef dive led by Germán—a submerged
-reality begins to surface. What appeared as a backdrop to a tropical escape is in fact
-collapsing. The corals are not dying—they are already dead in many places, and what
-remains is held together by threads of labor, memory, and one man’s impossible
-commitment.</p>
-                  <p class="font-bold text-xl text-stone-800 text-justify">
-
-The film unfolds as a meditation on purpose and escapism—two parallel forces that
-shape how we choose to live, or look away.
-                  </p></span>
-
-        </div>
-       
-      </div>
+  <!-- Grid content -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 z-10 relative">
+    <!-- Column 1 -->
+    <div>
+      <img src="assets/poster.png" alt="Island of Swallows Logo" class="w-full object-contain" loading="lazy" />
     </div>
 
-  <div class="max-w-6xl mx-auto space-y-12">
+    <!-- Column 2 -->
+    <div class="flex flex-col space-y-4">
+      <span class="text-sm text-gray-400">| synopsis</span>
+      <p class="text-base sm:text-lg md:text-xl text-justify font-semibold">
+        Set in Cozumel, Mexico, this documentary follows two parallel threads: Germán, a solitary diver restoring coral reefs by hand, and an American family on a short holiday cruise, navigating the well-worn contours of leisure. One moves slowly, deliberately, embedded in the rhythms of the sea; the other is swept along by the temporal economy of break-time, itinerary, and return.
+      </p>
+      <p class="text-base sm:text-lg md:text-xl text-justify font-semibold">
+        When their paths converge—during a reef dive led by Germán—a submerged reality begins to surface. What appeared as a backdrop to a tropical escape is in fact collapsing. The corals are not dying—they are already dead in many places, and what remains is held together by threads of labor, memory, and one man’s impossible commitment.
+      </p>
+      <p class="text-base sm:text-lg md:text-xl text-justify font-semibold">
+        The film unfolds as a meditation on purpose and escapism—two parallel forces that shape how we choose to live, or look away.
+      </p>
+    </div>
+  </div>
 
-    
-        
-
-    <hr class="mt-12 border-t border-gray-300" />
-
-    <!-- Top row: Director & Year -->
-    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-12">
-      <div class="mb-4 md:mb-0">
-        <span class="text-sm  text-gray-400">| directed by</span>
-        <h2 class="text-3xl md:text-4xl font-bold stone-800">Kaito Sashihara</h2>
+  <!-- Director, Year, Button -->
+  <div class="max-w-6xl mx-auto mt-12 space-y-12 z-10 relative">
+    <hr class="border-t border-gray-300" />
+    <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+      <div>
+        <span class="text-sm text-gray-400">| directed by</span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">Kaito Sashihara</h2>
       </div>
       <div>
         <span class="text-sm text-gray-400">| year</span>
-        <h2 class="text-3xl md:text-4xl font-bold">2025</h2>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">2025</h2>
       </div>
       <div class="mt-4 md:mt-0">
         <button class="border border-black px-6 py-3 text-sm font-semibold hover:bg-black hover:text-white transition">
@@ -73,48 +81,34 @@ shape how we choose to live, or look away.
         </button>
       </div>
     </div>
+  </div>
 
-    <!-- Cast row -->
-    <!-- Photos with description -->
-
-        <hr class="mt-12 border-t border-gray-300" />
-
-        
-<div id="cast" class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-  
-   <div class="flex flex-col md:flex-row items-center md:items-start   overflow-hidden transition-transform duration-300 hover:scale-105">
-   
-    <img src="assets/guzman.png" alt="Actor 2" class="w-full md:w-48 h-48 object-cover">
-    <div class="p-6">
-      
-      <h3 class="text-xl font-bold text-stone-800 mb-2">Germán Méndez</h3>
-      <p class="text-stone-700 text-justify">
-A marine biologist and founder of Cozumel Coral Reef Restoration, Germán is fiercely dedicated to saving the dying
-reefs. With bold activism and scientific rigor, he fights cruise industry damage and government inaction, rooted
-deeply in his love for the island’s fragile ecosystems.
-      </p>
-    </div>
+  <!-- Cast section -->
+  <div id="cast" class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 z-10 relative">
+    <!-- Member 1 -->
+    <div class="flex flex-col md:flex-row items-center md:items-start overflow-hidden transition-transform duration-300 hover:scale-105">
+      <img src="assets/guzman.png" alt="German Mendex, restauración de coral maritimo" class="w-full md:w-48 h-48 object-cover" />
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Germán Méndez</h3>
+        <p class="text-justify">
+          A marine biologist and founder of Cozumel Coral Reef Restoration, Germán is fiercely dedicated to saving the dying reefs. With bold activism and scientific rigor, he fights cruise industry damage and government inaction, rooted deeply in his love for the island’s fragile ecosystems.
+        </p>
+      </div>
     </div>
 
-  <!-- Photo 1 -->
-  <div class="flex flex-col md:flex-row items-center md:items-start  overflow-hidden transition-transform duration-300 hover:scale-105">
-    <img src="assets/toursit.jpg" alt="Actor 1" class="w-full md:w-48 h-48 object-cover">
-    <div class="p-6">
-      <h3 class="text-xl font-bold text-stone-800 mb-2">Tourist Family</h3>
-      <p class="text-stone-700 text-justify">
-A simple generic family with a set of blue collar working parents and a couple of young children. They look to have
-a relaxing holiday away from their lives full of struggles and worries      </p>
+    <!-- Member 2 -->
+    <div class="flex flex-col md:flex-row items-center md:items-start overflow-hidden transition-transform duration-300 hover:scale-105">
+      <img src="assets/toursit.jpg" alt="Familia turista disfrutando sus vacaciones en Cozumel en Island of Swallows" class="w-full md:w-48 h-48 object-cover" />
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Tourist Family</h3>
+        <p class="text-justify">
+          A simple generic family with a set of blue collar working parents and a couple of young children. They look to have a relaxing holiday away from their lives full of struggles and worries.
+        </p>
+      </div>
     </div>
   </div>
 
-  <!-- Photo 2 -->
- 
+  <a href="#synopsis">Ver Sinopsis del Documental</a>
+<a href="#team">Conoce al Equipo</a>
 
-</div>
-
-
-
-     <!-- Cast row -->
-   
-  </div>
 </section>

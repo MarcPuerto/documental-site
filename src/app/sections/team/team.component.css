@@ -20,7 +20,6 @@ html {
 body {
   min-height: 100%;
   padding: 3vw;
-  background-color: #0c0d20;
   display: grid;
   place-content: center;
 }
