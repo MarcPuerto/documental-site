@@ -1,64 +1,52 @@
-<section class="relative w-full bg-white text-black py-16 px-8 md:px-32">
+<section class="relative w-full py-16 px-4 sm:px-8 md:px-32 overflow-hidden">
+  <!-- Background image (behind everything) -->
+  <img
+    src="assets/green.jpg"
+    alt="Coral protection film documentary in Mexico"
+    class="absolute inset-0 w-full h-full object-cover object-center z-0"
 
-   <div class="max-w-4xl mx-auto text-center space-y-8 pb-8">
-    
-    <h2 class="text-3xl md:text-4xl font-bold tracking-tight">
-      Support the Film
+  />
+
+  <!-- Overlay for slight dark tint (optional) -->
+  <div class="absolute inset-0 bg-black/40 z-0"></div>
+
+  <!-- Content -->
+  <div class="relative p-y6 z-10 max-w-4xl mx-auto text-center space-y-8 pb-8">
+        <div class="text-6xl animate-bounce">💚</div>
+
+    <!-- 🔹 Image-filled heading -->
+    <h2
+      class="text-3xl md:text-5xl font-bold text-white">
+      Support the Film 
     </h2>
-    
-    <p class="text-lg md:text-xl font-semibold leading-relaxed text-stone-700">
-      If you want to make a donation to the film, you can support us through our fiscal sponsor or the crowd funding campaign. Any amount matters — thank you for your support!
+
+    <p
+      class="text-lg md:text-xl font-semibold leading-relaxed text-orange-50">
+      If you want to make a donation to the film, you can support us through our
+      fiscal sponsor or the crowd funding campaign. Any amount matters — thank
+      you for your support!
     </p>
 
     <div class="space-y-4">
-      <h3 class="text-lg uppercase tracking-wide text-gray-500 font-semibold">
+      <h3
+        class="text-lg uppercase tracking-wide text-gray-200 font-semibold">
         Fiscal Sponsorship
       </h3>
-      <a 
-        href="https://simastudios.org/fiscal-sponsorship/island-of-swallows" 
-        target="_blank" 
+
+      <!-- 🔹 Button with shadow -->
+      <a
+        href="https://simastudios.org/fiscal-sponsorship/island-of-swallows"
+        target="_blank"
         rel="noopener noreferrer"
-        class="inline-block border border-black px-8 py-3 font-medium text-sm bg-stone-700 hover:bg-stone-900  text-white transition rounded-full"
+        class="inline-block px-8 py-3 text-sm font-medium rounded-full
+               bg-white text-black
+               shadow-[0_4px_12px_rgba(0,0,0,0.4)]
+               hover:shadow-[0_6px_20px_rgba(0,0,0,0.6)]
+               hover:bg-stone-900 hover:text-white
+               transition duration-300"
       >
         HELP US!
       </a>
-    </div>
-    
-  </div>
-
-  <div class="max-w-6xl mx-auto">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      
-      <!-- Image 1 -->
-      <div class="overflow-hidden rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-110">
-        <img src="assets/gallery1.jpeg" alt="Gallery 1" class="w-full h-64 object-cover">
-      </div>
-
-      <!-- Image 2 -->
-      <div class="overflow-hidden rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-110">
-        <img src="assets/gallery2.jpeg" alt="Gallery 2" class="w-full h-64 object-cover">
-      </div>
-
-      <!-- Image 3 -->
-      <div class="overflow-hidden rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-110">
-        <img src="assets/gallery3.jpeg" alt="Gallery 3" class="w-full h-64 object-cover">
-      </div>
-
-      <!-- Image 4 -->
-      <div class="overflow-hidden rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-110">
-        <img src="assets/gallery4.jpeg" alt="Gallery 4" class="w-full h-64 object-cover">
-      </div>
-
-      <!-- Image 5 -->
-      <div class="overflow-hidden rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-110">
-        <img src="assets/gallery5.jpeg" alt="Gallery 5" class="w-full h-64 object-cover">
-      </div>
-
-      <!-- Image 6 -->
-      <div class="overflow-hidden rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-110">
-        <img src="assets/gallery6.jpeg" alt="Gallery 6" class="w-full h-64 object-cover">
-      </div>
-
     </div>
   </div>
 </section>
