@@ -37,12 +37,12 @@ ngOnInit() {
 
   if (isPlatformBrowser(this.platformId)) {
     // ✅ This code runs only in the browser
-    this.titleService.setTitle('Island of Swallows – Coral Documentary');
+    this.titleService.setTitle('Island of Swallows');
     this.meta.addTags([
       { name: 'description', content: 'A poetic documentary capturing coral restoration and human connection.' },
       { name: 'author', content: 'Kaito Sashihara Martinez & Jenny Jo Stokka' },
       { name: 'keywords', content: 'coral, ocean, documentary, restoration, film, environment' },
-      { property: 'og:title', content: 'Island of Swallows – Coral Documentary' },
+      { property: 'og:title', content: 'Island of Swallows' },
       { property: 'og:description', content: 'A poetic film about the future of coral and those who protect it.' },
       { property: 'og:image', content: 'https://example.com/assets/thumbnail.jpg' },
       { property: 'og:url', content: 'https://islandofswallows.com' },
